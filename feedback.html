@@ -28,9 +28,12 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- color -->
     <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css" />
-
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+     <link href="login.css" rel="stylesheet">
     <!-- Modernizer -->
     <script src="js/modernizer.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+     <link href="feedback.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -65,14 +68,14 @@
                             </div>
                             <div id="navbar" class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li class="active"><a href="#banner">Home</a></li>
-                                    <li><a href="#about">About us</a></li>
-                                    <li><a href="#menu">Menu</a></li>
-                                    <li><a href="#our_team">Team</a></li>
-                                    <li><a href="#gallery">Gallery</a></li>
-                                    <li><a href="#pricing">pricing</a></li>
-                                    <li><a href="#reservation">Subscription</a></li>
-                                    <li><a href="#footer">Contact us</a></li>
+                                    <li class="active"><a href="./index.html#banner">Home</a></li>
+                                    <li><a href="./index.html#about">About us</a></li>
+                                    <li><a href="./index.html#menu">Menu</a></li>
+                                    <li><a href="./index.html#our_team">Team</a></li>
+                                    <li><a href="./index.html#gallery">Gallery</a></li>
+                                    <li><a href="./index.html#pricing">pricing</a></li>
+                                    <li><a href="./index.html#reservation">Subscription</a></li>
+                                    <li><a href="./index.html#footer">Contact us</a></li>
                                     <li><a href="feedback.html">Feedback</a></li>
                                     <li><a href="login.html">Login</a></li>
                                     
@@ -92,8 +95,41 @@
 	<!-- end site-header -->
 	
     <div id="banner" class="banner full-screen-mode parallax">
-
-    </div>
+        <div class="container" style="padding-top:300px; ">
+            
+                <div class="row" style="margin-top:40px;">
+                    <div class="col-md-12">
+                    <div class="well well-sm">
+                        <div class="text-center">
+                            <a class="btn btn-success btn-green" style="color:rgb(241, 238, 238); background-color: chocolate;" href="#reviews-anchor" id="open-review-box">Give your feedback</a>
+                        </div>
+                    
+                        <div class="row" id="post-review-box" style="display:none;">
+                            <div class="col-md-12">
+                                <form accept-charset="UTF-8" action="" method="post">
+                                    <input id="ratings-hidden" name="rating" type="hidden"> 
+                                    <textarea class="form-control animated"  cols="50" id="new-review" name="email" placeholder="Give your email address.." rows="5"></textarea>
+                                    <textarea class="form-control animated " cols="50" id="new-review" name="comment" placeholder="Give your feedback here..." rows="5"></textarea>
+                    
+                                    <div class="text-right">
+                                        <div class="stars starrr" data-rating="0"></div>
+                                        <a class="btn btn-danger btn-lg" href="#" id="close-review-box" style="display:none; margin-right: 10px;">
+                                        <span class="glyphicon glyphicon-remove"></span>Cancel</a>
+                                        <button class="btn btn-success btn-lg" type="submit">Save</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div> 
+                     
+                    </div>
+                </div>
+            
+       
+        </div>
+        </div>
+    
+    
         
     
                 <!-- end row -->
@@ -205,7 +241,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <h6 class="copy-title"> Copyright &copy; 2023 Pangat is powered by <a href="https://themewagon.com/" target="_blank">Invictus digisoft pvt. ltd.</a> </h6>
+                            <h6 class="copy-title"> Copyright &copy; 2023 Pangat is powered by <a href="" target="_blank">Invictus digisoft pvt. ltd.</a> </h6>
                         </div>
                     </div>
                     <!-- end row -->
@@ -237,6 +273,13 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<script src="login.js"></script>
+<script src="feedback .js"></script>
 </body>
 
-</html>s
+</html>
