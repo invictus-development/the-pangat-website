@@ -274,7 +274,19 @@
 			CONTACT FORM
 		=============================================== */	
 			 jQuery(document).ready(function() {
-				$('#contact-form').submit(function() {
+				$('#contact-form').submit(function() {console.log("clicked");
+				let d=
+				{name: $('#name').val(),
+				dob: $('#dob').val(),
+				email: $('#email').val(),
+				phone: $('#phone').val(),
+				meal_preference: $('#meal_preference').val(),
+				meal_type: $('#meal_type').val(),
+				plan: $('#meal_plan').val(),
+				profession: $('#profession').val(),
+				address: $('#address').val()
+			}
+				console.log(d);
 					var action = $(this).attr('action');
 					$("#message").slideUp(750, function() {
 						$('#message').hide();
@@ -282,13 +294,15 @@
 							.after('<img src="images/ajax-loader.gif" class="loader" />')
 							.attr('disabled', 'disabled');
 						$.post(action, {
-								first_name: $('#first_name').val(),
+								name: $('#name').val(),
+								dob: $('#dob').val(),
 								email: $('#email').val(),
 								phone: $('#phone').val(),
-								no_of_persons: $('#no_of_persons').val(),
-								preferred_food: $('#preferred_food').val(),
-								occasion: $('#occasion').val(),
-								verify: $('#verify').val()
+								meal_preference: $('#meal_preference').val(),
+								meal_type: $('#meal_type').val(),
+								plan: $('#plan').val(),
+								profession: $('#profession').val(),
+								address: $('#address').val()
 							},
 							function(data) {
 								document.getElementById('message').innerHTML = data;

@@ -34,11 +34,16 @@
     <script src="js/modernizer.js"></script>
     
      <link href="feedback.css" rel="stylesheet">
+     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style>
+        .dropdown-menu>li>a{color:#000 !important}
+    </style>
 
 </head>
 
@@ -68,15 +73,17 @@
                             </div>
                             <div id="navbar" class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li class="active"><a href="./index.html#banner">Home</a></li>
+                                    <li><a href="./index.html#banner">Home</a></li>
                                     <li><a href="./index.html#about">About us</a></li>
                                     <li><a href="./index.html#menu">Menu</a></li>
                                     
                                     <li><a href="./index.html#gallery">Gallery</a></li>
                                     <li><a href="./index.html#pricing">pricing</a></li>
-                                    <li><a href="./index.html#reservation">Subscription</a></li>
-                                    <li><a href="./index.html#footer">Contact us</a></li>
-                                    <li><a href="feedback.html">Feedback</a></li>
+                                    <li><a href="./index.html#reservation">Features</a></li>
+                                    <!--<li><a href="./index.html#footer">Contact us</a></li>-->
+                                    <li><a href="subscription.html">Subscription</a></li>
+                                    <li class="active"><a href="feedback.html">Feedback</a></li>
+                                    <li><a href="enquiry_form.html">Enquiry</a></li>
                                     <li><a href="login.html">Login</a></li>
                                     
                                 </ul>
@@ -94,38 +101,186 @@
     </div>
 	<!-- end site-header -->
 	
-    <div id="banner" class="banner full-screen-mode parallax">
-        <div class="container" style="padding-top:300px; ">
-            
-                <div class="row" style="margin-top:40px;">
-                    <div class="col-md-12">
-                    <div class="well well-sm">
-                        <div class="text-center">
-                            <a class="btn btn-success btn-green" style="color:rgb(241, 238, 238); background-color: chocolate;" href="#reviews-anchor" id="open-review-box">Give your feedback</a>
+    <div id="banner" class="banner full-screen-mode parallax" style="height: 120vh;">
+        <div class="container" style="padding-top:200px; ">
+            <div class="row">
+                <form id="contact-form" method="post" class="reservations-box" name="contactform" action="mail.php">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-box">
+                            <input type="text" name="name" id="name" placeholder="Name" required="required" data-error="Name is required.">
                         </div>
-                    
-                        <div class="row" id="post-review-box" style="display:none;">
-                            <div class="col-md-12">
-                                <form accept-charset="UTF-8" action="" method="post">
-                                    <input id="ratings-hidden" name="rating" type="hidden"> 
-                                    <textarea class="form-control animated"  cols="50" id="new-review" name="email" placeholder="Give your email address.." rows="5"></textarea>
-                                    <textarea class="form-control animated " cols="50" id="new-review" name="comment" placeholder="Give your feedback here..." rows="5"></textarea>
-                    
-                                    <div class="text-right">
-                                        <div class="stars starrr" data-rating="0"></div>
-                                        <a class="btn btn-danger btn-lg" href="#" id="close-review-box" style="display:none; margin-right: 10px;">
-                                        <span class="glyphicon glyphicon-remove"></span>Cancel</a>
-                                        <button class="btn btn-success btn-lg" type="submit">Save</button>
-                                    </div>
-                                </form>
-                            </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-box">
+                            <input type="text" name="phone" id="phone" placeholder="Phone" required="required" data-error="Name is required.">
                         </div>
-                    </div> 
-                     
-                    </div>
-                </div>
-            
-       
+                    </div><!-- end col -->
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-box">
+                            <input type="text" name="date" id="date" onfocus="(this.type='date')" onfocusout="(this.type='text')" placeholder="Date of Sampling" required="required" data-error="Name is required.">
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-box">
+                            <select name="meal_type" id="meal_type" class="selectpicker" multiple>
+                                <option selected disabled>Meal Type</option>
+                                <option value="breakfast">Breakfast</option>
+                                <option value="lunch">Lunch</option>
+                                <option value="dinner">Dinner</option>
+                                
+                            </select>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-box">
+                            <select name="fooding_source" id="fooding_source" class="selectpicker">
+                                <option selected disabled>Current Fooding Source</option>
+                                <option value="self">Self / Homemade</option>
+                                <option value="tiffin">Tiffin Service</option>
+                                <option value="adhoc">Adhoc Order and delivery</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-box">
+                            <input type="text" name="name_area" id="name_area" placeholder="If Availing Tiffin Service - Name and Area" required="required" data-error="Name is required.">
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-box">
+                            <textarea name="address" id="address" cols="30" rows="4" placeholder="Address"></textarea>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-box">
+                            <select name="food_presentation" id="food_presentation" class="selectpicker">
+                                <option selected disabled>Food Presentation - First Look</option>
+                                <option value="1">1-Poor</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5-Excellent</option>
+                            </select>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-box">
+                            <select name="food_packaging" id="food_packaging" class="selectpicker">
+                                <option selected disabled>Food Packaging - Look and Feel</option>
+                                <option value="1">1-Poor</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5-Excellent</option>
+                            </select>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-box">
+                            <select name="timeliness_delivery" id="timeliness_delivery" class="selectpicker">
+                                <option selected disabled>Timeliness of the Delivery</option>
+                                <option value="1">1-Poor Timing</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5-Excellent Timing</option>
+                            </select>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-box">
+                            <select name="food_hot_cold" id="food_hot_cold" class="selectpicker">
+                                <option selected disabled>Whether the food was served hot / cold</option>
+                                <option value="1">1-Cold</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5-Hot</option>
+                            </select>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-box">
+                            <select name="food_bland_spicy" id="food_bland_spicy" class="selectpicker">
+                                <option selected disabled>How did you like the taste  - Bland / Spicy</option>
+                                <option value="1">1-Too Bland</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5-Too Spicy</option>
+                            </select>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-box">
+                            <select name="quantity_served" id="quantity_served" class="selectpicker">
+                                <option selected disabled>How was the quantity served</option>
+                                <option value="1">1-Inadequate</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5-Adequate</option>
+                            </select>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-box">
+                            <select name="inadequate" id="inadequate" class="selectpicker">
+                                <option selected disabled>If Inadequate then in which terms</option>
+                                <option value="1">Too Less</option>
+                                <option value="2">Too Much</option>
+                                <option value="3">Mismatched</option>
+                            </select>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-box">
+                            <select name="pay_meal" id="pay_meal" class="selectpicker">
+                                <option selected disabled>How much would you like to pay for this meal</option>
+                                <option value="1">Rs 15</option>
+                                <option value="2">Rs 25</option>
+                                <option value="3">Rs 35</option>
+                                <option value="4">Rs 45</option>
+                                <option value="5">Rs 55</option>
+                                <!-- <option value="5">Others</option> -->
+                            </select>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-box">
+                            <select name="overall_rating" id="overall_rating" class="selectpicker">
+                                <option selected disabled>Overall Rating</option>
+                                <option value="1">1-Poor</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5-Excellent</option>
+                            </select>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-box">
+                            <input type="text" id="things_liked" name="things_liked" placeholder="Things you liked">
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-box">
+                            <input type="text" id="things_disliked" name="things_disliked" placeholder="Things you disliked">
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-box">
+                            <input type="text" id="suggestions" name="suggestions" placeholder="Suggestions">
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="reserve-book-btn text-center">
+                            <button class="hvr-underline-from-center" type="submit" value="SEND" id="feedback_submit">submit</button>
+                        </div>
+                    </div><!-- end col -->
+                </form>
+            </div>       
         </div>
         </div>
     
@@ -256,18 +411,23 @@
 
     <a href="#" class="scrollup" style="display: none;">Scroll</a>
 
-    <!--<section id="color-panel" class="close-color-panel">
-        <a class="panel-button gray2"><i class="fa fa-cog fa-spin fa-2x"></i></a>
-        <!-- Colors 
-        <div class="segment">
-            <h4 class="gray2 normal no-padding">Color Scheme</h4>
-            <a title="orange" class="switcher orange-bg"></a>
-            <a title="strong-blue" class="switcher strong-blue-bg"></a>
-            <a title="moderate-green" class="switcher moderate-green-bg"></a>
-            <a title="vivid-yellow" class="switcher vivid-yellow-bg"></a>
-        </div>
-    </section> -->
-
+    <script>
+        jQuery(document).ready(function(){
+            $('#feedback_submit').click(function(){
+                event.preventDefault();
+                let data={
+                    name:$('#name').val(),
+                    phone:$('#phone').val(),
+                    date:$('#date').val(),
+                    meal_type:$('#meal_type').val(),
+                    fooding_source:$('#fooding_source').val(),
+                    name_area:$('#name_area').val(),
+                    address:$('#address').val(),
+                }
+                console.log(data);
+            })
+        })
+    </script>
     <!-- ALL JS FILES -->
     <script src="js/all.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <!-- Site Metas -->
+    <title>the Pangat</title>
+    <meta name="keywords" content="the pangat ranchi,best mess in Ranchi,top mess in Ranchi,Ranchi mess">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- color -->
+    <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css">
+
+    <!-- Modernizer -->
+    <script src="js/modernizer.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        form .form-group label{
+            color: #FFF !important;
+        }
+        .dropdown-menu>li>a{color:#000 !important}
+    </style>
+
+</head>
+
+<body>
+    <div id="loader">
+        <div id="status"></div>
+    </div>
+    <div id="site-header">
+        <header id="header" class="header-block-top">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu">
+                        <!-- navbar -->
+                        <nav class="navbar navbar-default" id="mainNav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="logo">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="#">
+                                        <img src="images/Artboard 1.png" alt="img" style="width:100px; height:100px">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="./index.html#banner">Home</a></li>
+                                    <li><a href="./index.html#about">About us</a></li>
+                                    <li><a href="./index.html#menu">Menu</a></li>
+
+                                    <li><a href="./index.html#gallery">Gallery</a></li>
+                                    <li><a href="./index.html#pricing">pricing</a></li>
+                                    <li><a href="./index.html#reservation">Features</a></li>
+                                    <!--<li><a href="./index.html#footer">Contact us</a></li>-->
+                                    <li><a href="subscription.html">Subscription</a></li>
+                                    <li><a href="feedback.html">Feedback</a></li>
+                                    <li class="active"><a href="enquiry_form.html">Enquiry</a></li>
+                                    <li><a href="login.html">Login</a></li>
+
+                                </ul>
+                            </div>
+                            <!-- end nav-collapse -->
+                        </nav>
+                        <!-- end navbar -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container-fluid -->
+        </header>
+        <!-- end header -->
+    </div>
+    <!-- end site-header -->
+
+    <div id="banner" class="banner full-screen-mode parallax">
+    <div class="container"  style="padding-top: 15rem;">
+            <div class="row">
+                <form id="" method="" class="reservations-box" name="" action="">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-box">
+                      <!-- <label>Name</label> -->
+                      <input type="text" id="name" name="name" placeholder="Name">
+                    </div>
+                </div><!--end-->
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-box">
+                      <!-- <label>Contact Number</label> -->
+                      <input type="text" id="phone" name="phone" placeholder="Contact Number">
+                    </div>
+                </div> <!--end-->
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-box">
+                      <!-- <label>Date Of Birth</label> -->
+                      <input type="text" id="dob" name="dob" placeholder="Date Of Birth" onfocus="(this.type='date')" onfocusout="(this.type='text')">
+                    </div>
+                </div><!--end-->
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-box">
+                      <!-- <label>Work Nature</label> -->
+                      <select id="work_nature" name="work_nature" class="selectpicker">
+                        <option selected disabled>Work Nature</option>
+                        <option value="students">Students</option>
+                        <option value="employed">Employed</option>
+                      </select>
+                    </div>
+                </div><!--end-->
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-box">
+                      <!-- <label>Email</label> -->
+                      <input type="email" id="email" name="email" placeholder="Email">
+                    </div>
+                </div><!--end-->
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-box">
+                      <!-- <label>Hostel / PG Name (If Available)</label> -->
+                      <input type="text" id="hostel_pg_name" name="hostel_pg_name" placeholder="Hostel / PG Name (If Available)">
+                    </div>
+                </div><!--end-->
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-box">
+                      <!-- <label>Meal Preference</label> -->
+                      <select id="meal_preference" name="meal_preference" class="selectpicker">
+                        <option selected disabled>Meal Preference</option>
+                        <option value="veg">Veg</option>
+                        <option value="non_veg">Non Veg</option>
+                      </select>
+                    </div>
+                </div><!--end-->
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-box">
+                      <!-- <label>Current Mess Subscription Price</label> -->
+                      <input type="text" id="current_mess_price" name="current_mess_price" placeholder="Current Mess Subscription Price">
+                    </div>
+                </div><!--end-->
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-box">
+                      <!-- <label>How Many Meals in a Day ?</label> -->
+                      <select id="meals_per_day" name="meals_per_day" class="selectpicker">
+                        <option selected disabled>How Many Meals in a Day ?</option>
+                        <option value="1_time">1 Time</option>
+                        <option value="2_time">2 Time</option>
+                        <option value="3_time">3 Time</option>
+                      </select>
+                    </div>
+                </div><!--end-->
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-box">
+                      <!-- <label>Current Package for a Days ?</label> -->
+                      <select id="current_package_days" name="current_package_days" class="selectpicker">
+                        <option selected disabled>Current Package for a Days ?</option>
+                        <option value="7_days">7 Days</option>
+                        <option value="15_days">15 Days</option>
+                        <option value="30_days">30 Days</option>
+                      </select>
+                    </div>
+                </div><!--end-->
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-box">
+                      <!-- <label>Mess Type</label> -->
+                      <select id="mess_type" name="mess_type" class="selectpicker">
+                        <option selected disabled>Mess Type</option>
+                        <option value="outside">Outside</option>
+                        <option value="hostel">Hostel</option>
+                        <option value="slef_cooking">Self Cooking</option>
+                      </select>
+                    </div>
+                </div><!--end-->
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-box">
+                      <!-- <label>Current Subscription Last Date</label> -->
+                      <input type="text" id="subscription_last_date" name="subscription_last_date" placeholder="Current Subscription Last Date" onfocus="(this.type='date')" onfocusout="(this.type='text')">
+                    </div>
+                </div><!--end-->
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-box">
+                      <!-- <label>Interested Date to Join Pangat</label> -->
+                      <input type="text" id="subscription_join_date" name="subscription_join_date" placeholder="Interested Date to Join Pangat" onfocus="(this.type='date')" onfocusout="(this.type='text')">
+                    </div>
+                </div><!--end-->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-box">
+                      <!-- <label>Address</label> -->
+                      <textarea id="address" name="address" cols="30" rows="4" placeholder="Address"></textarea>
+                    </div>
+                </div><!--end-->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="reserve-book-btn text-center">
+                        <button class="hvr-underline-from-center" type="submit" id="enquiry_submit" name="enquiry_submit">submit</button>
+                      <!-- <input id="enquiry_submit" name="enquiry_submit" type="button" class="btn btn-block bg-primary" value="ENQUIRY"> -->
+                    </div>
+                </div>
+            </form>
+            </div>
+    </div>
+    </div>
+
+    <div id="footer" class="footer-main">
+        <div class="footer-news pad-top-100 pad-bottom-70 parallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <h2 class="ft-title color-white text-center"> Your Query </h2>
+                            <p>For More Information</p>
+                        </div>
+                        <form>
+                            <input type="email" placeholder="Enter your e-mail id">
+                            <a href="#" class="orange-btn"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
+                        </form>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+
+        <!-- end footer-news -->
+        <div class="footer-box pad-top-70">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-in-main">
+                        <div class="footer-logo">
+                            <div class="text-center">
+                                <img src="images/Artboard 1.png" alt="img" style="width:100px; height:100px">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-a">
+                                <h3>About Us</h3>
+                                <p>Aenean commodo ligula eget dolor aenean massa. Cum sociis nat penatibu set magnis dis
+                                    parturient montes.</p>
+                                <ul class="socials-box footer-socials pull-left">
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa  fa-facebook"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-twitter"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-pinterest"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- end footer-box-a -->
+                        </div>
+                        <!-- end col -->
+
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-c">
+                                <h3>Contact Us</h3>
+                                <p>
+                                    <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                    <span>Karni Heights, Ranchi, Jharkhand</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                    <span>
+                                        +91 80005 89080
+                                    </span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span><a href="#">thepangat.in</a></span>
+                                </p>
+                            </div>
+                            <!-- end footer-box-c -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-d">
+                                <h3>Opening Hours</h3>
+
+                                <ul>
+                                    <li>
+                                        <p>Sunday - Saturday </p>
+                                        <span> 6:00 AM - 9:00 PM</span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <!-- end footer-box-d -->
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-b">
+                                <h3>Key features</h3>
+                                <ul>
+                                    <li><a href="">Good Hygiene</a></li>
+                                    <li><a href="">Tasty food</a></li>
+                                    <li><a href="">Good packaging</a></li>
+                                    <li><a href="">Punctual service</a></li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-b -->
+                        </div>
+
+                        <!-- end col -->
+                    </div>
+                    <!-- end footer-in-main -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+            <div id="copyright" class="copyright-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h6 class="copy-title"> Copyright &copy; 2023 Pangat is powered by <a href=""
+                                    target="_blank">Invictus digisoft pvt. ltd.</a> </h6>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end copyright-main -->
+        </div>
+        <!-- end footer-box -->
+    </div>
+    <!-- end footer-main -->
+
+    <a href="#" class="scrollup" style="display: none;">Scroll</a>
+
+    <script>
+        jQuery(document).ready(function(){
+            $('#enquiry_submit').click(function(){
+                event.preventDefault();
+                // for enquiry submit
+                let data={
+                    name:$('#name').val(),
+                    phone:$('#phone').val(),
+                    dob:$('#dob').val(),
+                    work_nature:$('#work_nature').val(),
+                    email: $('#email').val(),
+                    hostel_pg_name: $('#hostel_pg_name').val(),
+                    meal_preference: $('#meal_preference').val(),
+                    current_mess_price:$('#current_mess_price').val(),
+                    meals_per_day:$('#meals_per_day').val(),
+                    current_package_days:$('#current_package_days').val(),
+                    mess_type:$('#mess_type').val(),
+                    subscription_last_date:$('#subscription_last_date').val(),
+                    subscription_join_date:$('#subscription_join_date').val(),
+                    address:$('#address').val(),
+			    }
+                console.log(data);
+            })
+        })
+    </script>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
