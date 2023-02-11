@@ -1863,7 +1863,7 @@ textarea:focus, input:focus, select:focus, .bootstrap-select .dropdown-toggle:fo
 	border-top: 2px dotted #fff;
 	text-align:center;
 	padding-top:25px;
-	margin-top:70px;
+	/* margin-top:70px; */
 	padding-bottom:25px;
 }
 
