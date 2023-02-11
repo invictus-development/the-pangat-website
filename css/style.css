@@ -1979,3 +1979,8 @@ textarea:focus, input:focus, select:focus, .bootstrap-select .dropdown-toggle:fo
 /* 
 .dropdown-content{display: none;}
 .dropdown a:hover .dropdown-content{display: block;} */
+
+/* custom css for selected table */
+/* .half-month::before{
+    margin-top: auto;
+} */

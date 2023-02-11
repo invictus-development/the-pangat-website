@@ -33,6 +33,10 @@
     <!-- Modernizer -->
     <script src="js/modernizer.js"></script>
 
+    <!-- chat css -->
+    <link rel="stylesheet" href="css/chat.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -1611,6 +1615,29 @@
     <!-- end footer-main -->
 
     <a href="#" class="scrollup" style="display: none;">Scroll</a>
+
+    <!-- chat -->
+    <a href="#" class="float" id="float">
+        <i class="fa fa-plus my-float"></i>
+        </a>
+    <div id="container" class="container-chat-hide">
+        <!-- <img src="https://cdn.pixabay.com/photo/2020/01/02/16/38/chatbot-4736275_960_720.png" height="400vh" alt="Chatbot clipart"> -->
+         <div id="chat" class="chat">
+          <div id="messages" class="messages-chat"></div>
+          <input class="input-chat" id="input-chat" type="text" placeholder="Write something..." autocomplete="off" autofocus="true" />
+        </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script>
+        $('#float').click(function() {
+            $(".fa-plus").toggleClass("fa-minus");
+            $('.container-chat-hide').toggleClass("container-chat")
+        });
+      </script>
+
+      <script src="./chat.js"></script>
+    <!-- end -->
 
     <script>
 
