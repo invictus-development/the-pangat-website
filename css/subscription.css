@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'nautilus_pompiliusregular';
+    src: url('../fonts/nautilus-webfont.woff2') format('woff2'),
+         url('../fonts/nautilus-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background: url(../images/banner.jpg);
+    background-size: contain;
+}
+.dropdown-menu>li>a {
+    color: #000 !important
+}
+
+.bootstrap-select.btn-group .dropdown-menu li a span.text {
+    display: block;
+}
+
+footer h6{
+    font-size: 24px;
+    font-family: 'nautilus_pompiliusregular';
+    color: #e75b1e;
+}
+footer p{
+    color: #FFF;
+}
+.active{
+    color: #e75b1e !important;
+    border-bottom: 3px solid #e75b1e !important;
+    padding-bottom: 3px !important;
+}
+.nav-item a{
+    /* text-decoration: none; */
+}
+.nav-item a:hover{
+    transition: 0.3s;
+    color: #FFF;
+    border-bottom: 3px solid #686868;
+    padding-bottom: 3px;
+}
