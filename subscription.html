@@ -272,7 +272,23 @@
             } else {
                 $("#phone").parent().next(".validation").remove(); // remove it
             }
-            $("form").validate().resetForm();
+            if (!$('#meal_preference').val()) {
+                if ($("#meal_preference").parent().next(".validation").length == 0) // only add if not added
+                {
+                    $("#meal_preference").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>*Please select your preference</div>");
+                }
+            } else {
+                $("#meal_preference").parent().next(".validation").remove(); // remove it
+            }
+            if (!$('#meal_plan').val()) {
+                if ($("#meal_plan").parent().next(".validation").length == 0) // only add if not added
+                {
+                    $("#meal_plan").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>*Please select your plan</div>");
+                }
+            } else {
+                $("#meal_plan").parent().next(".validation").remove(); // remove it
+            }
+
                 console.log(data);
             })
         })
