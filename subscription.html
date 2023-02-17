@@ -247,48 +247,48 @@
                     pincode: $('#pincode').val(),
                 }
 
-            if (!$('#name').val()) {
-                if ($("#name").parent().next(".validation").length == 0) // only add if not added
-                {
-                    $("#name").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>*Please enter your Name</div>");
-                }
-            } else {
-                $("#name").parent().next(".validation").remove(); // remove it
-            }
+            // if (!$('#name').val()) {
+            //     if ($("#name").parent().next(".validation").length == 0) // only add if not added
+            //     {
+            //         $("#name").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>*Please enter your Name</div>");
+            //     }
+            // } else {
+            //     $("#name").parent().next(".validation").remove(); // remove it
+            // }
 
-            if (!$('#email').val()) {
-                if ($("#email").parent().next(".validation").length == 0) // only add if not added
-                {
-                    $("#email").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>*Please enter your email address</div>");
-                }
-            } else {
-                $("#email").parent().next(".validation").remove(); // remove it
-            }
-            if (!$('#phone').val()) {
-                if ($("#phone").parent().next(".validation").length == 0) // only add if not added
-                {
-                    $("#phone").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>*Please enter your mobile number</div>");
-                }
-            } else {
-                $("#phone").parent().next(".validation").remove(); // remove it
-            }
-            if (!$('#meal_preference').val()) {
-                if ($("#meal_preference").parent().next(".validation").length == 0) // only add if not added
-                {
-                    $("#meal_preference").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>*Please select your preference</div>");
-                }
-            } else {
-                $("#meal_preference").parent().next(".validation").remove(); // remove it
-            }
-            if (!$('#meal_plan').val()) {
-                if ($("#meal_plan").parent().next(".validation").length == 0) // only add if not added
-                {
-                    $("#meal_plan").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>*Please select your plan</div>");
-                }
-            } else {
-                $("#meal_plan").parent().next(".validation").remove(); // remove it
-            }
-
+            // if (!$('#email').val()) {
+            //     if ($("#email").parent().next(".validation").length == 0) // only add if not added
+            //     {
+            //         $("#email").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>*Please enter your email address</div>");
+            //     }
+            // } else {
+            //     $("#email").parent().next(".validation").remove(); // remove it
+            // }
+            // if (!$('#phone').val()) {
+            //     if ($("#phone").parent().next(".validation").length == 0) // only add if not added
+            //     {
+            //         $("#phone").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>*Please enter your mobile number</div>");
+            //     }
+            // } else {
+            //     $("#phone").parent().next(".validation").remove(); // remove it
+            // }
+            // if (!$('#meal_preference').val()) {
+            //     if ($("#meal_preference").parent().next(".validation").length == 0) // only add if not added
+            //     {
+            //         $("#meal_preference").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>*Please select your preference</div>");
+            //     }
+            // } else {
+            //     $("#meal_preference").parent().next(".validation").remove(); // remove it
+            // }
+            // if (!$('#meal_plan').val()) {
+            //     if ($("#meal_plan").parent().next(".validation").length == 0) // only add if not added
+            //     {
+            //         $("#meal_plan").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>*Please select your plan</div>");
+            //     }
+            // } else {
+            //     $("#meal_plan").parent().next(".validation").remove(); // remove it
+            // }
+            
                 console.log(data);
             })
         })
