@@ -1,28 +1,520 @@
-d disabled>Meal Preference</option>
-        <option value="veg">Veg</option>
-        <option value="non-veg">Non-Veg</option>
-    </select>
-   
-  </div>
-  <div class="form-outline mb-4" style="margin-top: 20px;">
-    <label class="form-label" for="form1Example2" style="color: white">Plan</label>
-    <select name="meal_plan" id="meal_plan" class="selectpicker">
-        <option selected disabled>Choose your plan<option>
-        <option value="2999">Breakfast + Lunch + Dinner ( ₹ 2999 For 30 Days)</option>
-        <option value="1949">Breakfast + Lunch ( ₹ 1949 For 30 Days)</option>
-        <option value="1799">Breakfast + Dinner ( ₹ 1799 For 30 Days)</option>
-        <option value="2249">Lunch + Dinner ( ₹ 2249 For 30 Days)</option>
-        <option value="899">Breakfast ( ₹ 899 For 30 Days)</option>
-        <option value="1349">Lunch ( ₹ 1349 For 30 Days)</option>
-        <option value="1199" style="margin-bottom: 1rem;">Dinner ( ₹ 1199 For 30 Days)</option>
-        <option value="1549">Breakfast + Lunch + Dinner ( ₹ 1549 For 15 days)</option>
-        <option value="1049">Breakfast + Lunch ( ₹ 1049 For 15 days)</option>
-        <option value="949">Breakfast + Dinner ( ₹ 949 For 15 days)</option>
-        <option value="1199">Lunch + Dinner ( ₹ 1199 For 15 days)</option>
-        <option value="499">Breakfast ( ₹ 499 For 15 days)</option>
-        <option value="749">Lunch ( ₹ 749 For 15 days)</option>
-        <option value="649" style="margin-bottom: 1rem;">Dinner ( ₹ 649 For 15 days)</option>
-        <option value="699">Breakfast + Lunch + Dinner ( ₹ 699 For 7 Days)</option>
-        <option value="499">Breakfast + Lunch ( ₹ 499 For 7 Days)</option>
-        <option value="449">Breakfast + Dinner ( ₹ 449 For 7 Days)</option>
-        <option value="549">Lunch + Dinner ( ₹ 549 For 7 Days)
+<div class="col-md-12 col-sm-12 text-center">
+    <ul id="tabs" class="nav nav-tabs">
+        <li class="nav-item"><a href="" data-target="#home1" data-toggle="tab" class="nav-link small text-uppercase active">
+                <h1>Monthly Plan</h1>
+            </a></li>
+        <li class="nav-item"><a href="" data-target="#profile1" data-toggle="tab" class="nav-link small text-uppercase">
+                <h1>Half Monthly Plan</h1>
+            </a></li>
+        <li class="nav-item"><a href="" data-target="#weekly" data-toggle="tab" class="nav-link small text-uppercase">
+                <h1>Weekly Plan</h1>
+            </a></li>
+    </ul> <br>
+    <div id="tabsContent" class="tab-content">
+        <div id="home1" class="tab-pane fade in active">
+            <table class="table table-striped">
+                <thead class="bg-primary">
+                  <tr>
+                      <th scope="col" style="text-align: center;">Breakfast</th>
+                      <th scope="col" style="text-align: center;">Lunch</th>
+                      <th scope="col" style="text-align: center;">Dinner</th>
+                      <th scope="col" style="text-align: center;">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><strong>₹2,999</strong></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><strong>₹2,249</strong></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><strong>₹1,949</strong></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><strong>₹1,799</strong></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><strong>₹1,349</strong></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><strong>₹1,199</strong></td>    
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><strong>₹899</strong></td>    
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div id="profile1" class="tab-pane fade">
+            <table class="table table-striped half-month">
+                <thead class="bg-primary">
+                  <tr>
+                      <th scope="col" style="text-align: center;">Breakfast</th>
+                      <th scope="col" style="text-align: center;">Lunch</th>
+                      <th scope="col" style="text-align: center;">Dinner</th>
+                      <th scope="col" style="text-align: center;">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><strong>₹1,549</strong></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><strong>₹1,199</strong></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><strong>₹1,049</strong></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><strong>₹949</strong></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><strong>₹749</strong></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><strong>₹649</strong></td>    
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><strong>₹499</strong></td>    
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div id="weekly" class="tab-pane fade">
+            <table class="table table-striped">
+                <thead class="bg-primary">
+                  <tr>
+                      <th scope="col" style="text-align: center;">Breakfast</th>
+                      <th scope="col" style="text-align: center;">Lunch</th>
+                      <th scope="col" style="text-align: center;">Dinner</th>
+                      <th scope="col" style="text-align: center;">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><strong>₹699</strong></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><strong>₹549</strong></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><strong>₹499</strong></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-times"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><strong>₹449</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+
+<!--Old subscription page-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <!-- Site Metas -->
+    <title>the Pangat</title>
+    <meta name="keywords" content="the pangat ranchi,best mess in Ranchi,top mess in Ranchi,Ranchi mess">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- material -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/subscription.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div id="loader">
+        <div id="status"></div>
+    </div>
+
+    <!-- site-header -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-4">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+                <!-- Navbar brand -->
+                <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                    <img src="./images/Artboard 1.png" height="80"
+                        alt="MDB Logo" loading="lazy" />
+                </a>
+                <!-- Left links -->
+                <ul class="navbar-nav mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#reservation">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./subscription.html">Subscription</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./feedback.html">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./enquiry_form.html">Enquiry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">Login</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- end site-header -->
+
+    <div id="banner" class="banner full-screen-mode parallax" style="margin-top: 8.5rem !important;">
+        <div class="container">
+            <div class="row">
+                <div class="form-reservations-box">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center">
+
+                        <form class="p-5 bg-light">
+
+                            <p class="h4 mb-4 text-center">Subscribe</p>
+
+                            <div class="form-outline">
+                                <input type="text" id="name" class="form-control"/>
+                                <label class="form-label" for="form12">Name</label>
+                            </div>
+                            <div class="form-outline mt-2">
+                                <input type="email" id="email" class="form-control"/>
+                                <label class="form-label" for="form12">E-mail Address</label>
+                            </div>
+                            <div class="form-outline mt-2">
+                                <input type="text" id="phone" class="form-control"/>
+                                <label class="form-label" for="form12">Mobile Number</label>
+                            </div>
+                            <div class="form-outline mt-2">
+                                <select class="form-select" aria-label="Default select example" id="meal_preference" >
+                                    <option class="mystyle" selected disabled>Meal Preference</option>
+                                    <option class="mystyle" value="1">Veg</option>
+                                    <option class="mystyle" value="2">Non-Veg</option>
+                                    
+                                   </select>
+                            </div>
+                            <div class="form-outline mt-2">
+                                <select class="form-select" aria-label="Default select example" id="meal_plan">
+                                    <option class="mystyle" selected disabled>Meal Plan</option>
+                                    <option class="mystyle" value="1">Option Two</option>
+                                    <option class="mystyle" value="2">Option Three</option>
+                                    <option class="mystyle" value="3">Option Four</option>
+                                   </select>
+                            </div>
+                            <div class="col-lg-12 mt-3 d-flex justify-content-center">
+                                <button id="subscription_submit" type="button" class="btn btn-success">SUBMIT</button>
+                            </div>
+
+                        </form>
+                        <!-- Email input -->
+
+                        <!-- end form -->
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end reservations-box -->
+            </div>
+            <!-- end row -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted"> 
+    <!-- Section: Links  -->
+    <section class="" style="background-image: radial-gradient(ellipse at center, #00000091 0%,rgba(0, 0, 0, 0.87) 100%), url(../images/footer_background.jpg)">
+        <div class="container text-center text-md-start mt-5 d-flex justify-content-center">
+            <img src="images/Artboard 1.png" alt="img" style="width:100px; height:100px">
+        </div>
+
+        <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-captilize fw-bold mb-4">About Us</h6>
+            <p>
+                Aenean commodo ligula eget dolor aenean massa. Cum sociis nat penatibu set magnis dis parturient montes.
+            </p>
+          </div>
+          <!-- Grid column -->
+          
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-captilize fw-bold mb-4">Contact Us</h6>
+            <p><i class="fas fa-home me-3"></i> Karni Heights, Ranchi, Jharkhand</p>
+            <p><i class="fas fa-phone me-3"></i> +91 80005 89080</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              pangat@email.com
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-captilize fw-bold mb-4">
+                Key features
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Good Hygiene</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Tasty food</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Good packaging</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Punctual service</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: #e75b1e;color: #FFF;">
+      © 2021 Copyright: Powered by 
+      <a class="text-reset fw-bold" href="https://invictusdigisoft.com/" target="_blank"> Invictusdigisoft PVT. Ltd</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+    <a href="#" class="scrollup" style="display: none;">Scroll</a>
+
+
+    <script>
+        let base64Image = ''
+        jQuery(document).ready(function () {
+            // for signup
+            $('#subscription_submit').click(function () {
+                event.preventDefault();
+                let data = {
+                    name: $('#name').val(),
+                    dob: $('#dob').val(),
+                    email: $('#email').val(),
+                    phone: $('#phone').val(),
+                    meal_preference: $('#meal_preference').val(),
+                    meal_type: $('#meal_type').val(),
+                    meal_plan: $('#meal_plan').val(),
+                    profession: $('#profession').val(),
+                    image: base64Image,
+                    // image: $('#image').val(),
+                    password: $('#password').val(),
+                    specification: $('#specification').val(),
+                    address: $('#address').val(),
+                    pincode: $('#pincode').val(),
+                }
+
+            // if (!$('#name').val()) {
+            //     if ($("#name").parent().next(".validation").length == 0) // only add if not added
+            //     {
+            //         $("#name").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>*Please enter your Name</div>");
+            //     }
+            // } else {
+            //     $("#name").parent().next(".validation").remove(); // remove it
+            // }
+
+            // if (!$('#email').val()) {
+            //     if ($("#email").parent().next(".validation").length == 0) // only add if not added
+            //     {
+            //         $("#email").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>*Please enter your email address</div>");
+            //     }
+            // } else {
+            //     $("#email").parent().next(".validation").remove(); // remove it
+            // }
+            // if (!$('#phone').val()) {
+            //     if ($("#phone").parent().next(".validation").length == 0) // only add if not added
+            //     {
+            //         $("#phone").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>*Please enter your mobile number</div>");
+            //     }
+            // } else {
+            //     $("#phone").parent().next(".validation").remove(); // remove it
+            // }
+            // if (!$('#meal_preference').val()) {
+            //     if ($("#meal_preference").parent().next(".validation").length == 0) // only add if not added
+            //     {
+            //         $("#meal_preference").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>*Please select your preference</div>");
+            //     }
+            // } else {
+            //     $("#meal_preference").parent().next(".validation").remove(); // remove it
+            // }
+            // if (!$('#meal_plan').val()) {
+            //     if ($("#meal_plan").parent().next(".validation").length == 0) // only add if not added
+            //     {
+            //         $("#meal_plan").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>*Please select your plan</div>");
+            //     }
+            // } else {
+            //     $("#meal_plan").parent().next(".validation").remove(); // remove it
+            // }
+            
+                console.log(data);
+            })
+        })
+        
+
+        // for image conversion
+        // document.getElementById("image").style.display = "none";
+
+        // function encodeImageFileAsURL(element) {
+        //     let file = element.files[0];
+        //     let reader = new FileReader();
+        //     reader.onloadend = function () {
+        //         if (reader.result) {
+        //             base64Image = reader.result;
+        //             document.getElementById("image").style.display = "inherit";
+        //             document.getElementById("image_label").style.display = "none";
+        //             // document.getElementById("upload_image").className
+        //             document.getElementById("upload_image").classList.remove('col-lg-12', 'col-md-12', 'col-sm-12', 'col-xs-12')
+        //             document.getElementById("upload_image").classList.add('col-lg-6', 'col-md-6', 'col-sm-6', 'col-xs-12')
+        //         }
+        //         // document.write('RESULT: ', reader.result);
+        //         // var image = new Image();
+        //         // image.src = 'data:image/png;base64,iVBORw0K...';
+        //         let div = document.getElementById("display_image")
+        //         div.innerHTML += '<img src="' + base64Image + '" alt="" style="width:15rem;height:10rem">'
+        //         // document.body.appendChild(image);
+        //     }
+        //     reader.readAsDataURL(file);
+        // }
+
+    </script>
+
+    <!-- mouse -->
+    <script>
+        // document.onscroll = () => {
+        //     navbar.style.backgroundColor = "#202020";
+        //     navbar.style.color = "white";
+        //     // setTimeout(function () {
+        //     //     navbar.style.backgroundColor = "rgba(70,70,70)"
+        //     // }, 0);
+        // }
+        $('.nav-link').css('color', '#fff');
+    //     $(document).ready(function(){       
+    //     var scroll_pos = 0;
+    //     $(document).scroll(function() { 
+    //         scroll_pos = $(this).scrollTop();
+    //         if(scroll_pos > 210) {
+    //             $('.nav-link').css('color', '#FFF');
+    //         } else {
+    //             $('.nav-link').css('color', '#fff');
+    //             navbar.style.backgroundColor = "#202020";
+    //         }
+    //     });
+    // });
+    </script>
+    <!-- end -->
+
+    <!-- material -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'nautilus_pompiliusregular';
     src: url('../fonts/nautilus-webfont.woff2') format('woff2'),
          url('../fonts/nautilus-webfont.woff') format('woff');
@@ -33,10 +33,10 @@ footer p{
 }
 .nav-item a{
     /* text-decoration: none; */
-}
+/* }
 .nav-item a:hover{
     transition: 0.3s;
     color: #FFF;
     border-bottom: 3px solid #686868;
     padding-bottom: 3px;
-}
+} */ 
