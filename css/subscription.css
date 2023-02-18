@@ -39,4 +39,16 @@ footer p{
     color: #FFF;
     border-bottom: 3px solid #686868;
     padding-bottom: 3px;
-} */ 
+} body{
+    background-color:#eee;
+}
+
+
+.form-select:focus{
+    box-shadow:none;
+    border:1px solid #fff;
+}
+
+.signup-button{
+    height:48px;
+} */
