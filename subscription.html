@@ -28,7 +28,6 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- color -->
     <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css" >
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     
      <link href="login.css" rel="stylesheet">
     <!-- Modernizer -->
@@ -105,70 +104,97 @@
         <!-- end header -->
     </div>
 	<!-- end site-header -->
-	<div id="banner" class="banner full-screen-mode parallax">
-        
-        <div class="container" >
-            <div class="row" style="padding-top:200px">
-                <div class="col-xs-6 col-md-offset-3">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading ">Subscribe</div>
+	
+    <div id="banner" class="banner full-screen-mode parallax">
+        <div class="container" style="padding-top:300px">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="panel panel-login">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-12 text-center">
+                                    <a href="#" class="" id="login-form-link">Subscribe</a>
+                                </div>
+                                <!-- <div class="col-xs-6">
+                                    <a href="#" id="register-form-link">Register</a>
+                                </div> -->
+                            </div>
+                            <hr>
+                        </div>
                         <div class="panel-body">
-                            <form role="Form" method="post" action="" accept-charset="UTF-8">
-                               
-                                <div class="form-group">
-                                    <label for="lname">Name</label>
-                                    <input type="text" id="lname" class="form-control" name="lname" placeholder="">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <form id="login-form" action="" method="post" role="form" style="display: block;">
+                                        <div class="form-group">
+                                            <input type="text" name="name" id="email" tabindex="1" class="form-control" placeholder="Name" value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="Email-address" id="Email-address" tabindex="2" class="form-control" placeholder="Email-address">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="Mobile  number" id="Mobile number "tabindex="2" class="form-control" placeholder="Mobile No">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Meal Preference">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Meal plan">
+                                        </div>
+                                        <div class="form-group text-center">
+                                            <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                                            <label for="remember"> Remember Me</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-6 col-sm-offset-3">
+                                                    <input type="submit" name="login-submit" id="login_submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="text-center">
+                                                        <a href="#" tabindex="5" class="forgot-password">Forgot Password?</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <form id="register-form" action="" method="post" role="form" style="display: none;">
+                                        <div class="form-group">
+                                            <input type="email" name="create_email" id="create_email" tabindex="1" class="form-control" placeholder="Email Address">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="create_password" id="create_password" tabindex="2" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="confirm_password" id="confirm_password" tabindex="3" class="form-control" placeholder="Confirm Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-6 col-sm-offset-3">
+                                                    <input type="submit" name="register-submit" id="register_submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="form-group">
-                                    <label for="emailaddr">Email Address</label>
-                                    <input type="text" id="emailaddr" class="form-control" name="email" placeholder="">
-                                </div>
-                                <div class="form-group">
-                                    <label for="emailaddr">Mobile Number</label>
-                                    <input type="text" id="emailaddr" class="form-control" name="email" placeholder="">
-                                </div>
-                                <div class="form-group">
-                                    <label for="states">Meal Preference</label>
-                                    <select id="states" class="form-control" name="state">
-                                        <option value="unknown">Unknown</option>
-                                        <option value="alabama"></option>
-                                        <option value="alaska"></option>
-                                        <option value="arizona"></option>
-                                        
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="states">Meal Plan</label>
-                                    <select id="states" class="form-control" name="state">
-                                        <option value="unknown">Unknown</option>
-                                        <option value="alabama"></option>
-                                        <option value="alaska"></option>
-                                        <option value="arizona"></option>
-                                        
-                                    </select>
-                                </div>
-                              
-                                
-                                
-                               
-                                <div class="form-group text-center">
-                                    <button type="submit" class="btn btn-primary btn-lg" id="submitbtn" name="submit">Sign up!</button>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-      
-    </div>
-
-    <!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted"> 
-    <!-- Section: Links  -->
-    <section class="" style="background-image:  radial-gradient(ellipse at center, #00000091 0%,rgba(0, 0, 0, 0.87) 100%), url(../images/footer_background.jpg) !important">
-        <div class="container text-center text-md-start mt-5 d-flex justify-content-center">
-            <img src="images/Artboard 1.png" alt="img" style="width:100px; height:100px">
+        </div>
+        </div>
+    
+    
+        
+    
+                <!-- end row -->
+            </div>
+            <!-- end container -->
         </div>
         <!-- end footer-news -->
         <div class="footer-box pad-top-70">
@@ -183,7 +209,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                             <div class="footer-box-a">
                                 <h3>About Us</h3>
-                                <p>Aenean commodo ligula eget dolor aenean massa. Cum sociis nat penatibu set magnis dis parturient montes.</p>
+                                <p>The Pangat is a cloud tiffin service which provide you meals at affordable prices.</p>
                                 <ul class="socials-box footer-socials pull-left">
                                     <li>
                                         <a href="#">
@@ -217,19 +243,6 @@
                         </div>
                         <!-- end col -->
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                            <div class="footer-box-b">
-                                <h3>New Menu</h3>
-                                <ul>
-                                    <li><a href="#">Italian Bomba Sandwich</a></li>
-                                    <li><a href="#">Double Dose of Pork Belly</a></li>
-                                    <li><a href="#">Spicy Thai Noodles</a></li>
-                                    <li><a href="#">Triple Truffle Trotters</a></li>
-                                </ul>
-                            </div>
-                            <!-- end footer-box-b -->
-                        </div>
-                        <!-- end col -->
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                             <div class="footer-box-c">
                                 <h3>Contact Us</h3>
                                 <p>
@@ -249,6 +262,22 @@
                             </div>
                             <!-- end footer-box-c -->
                         </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="footer-box-b">
+                                <h3>Key features</h3>
+                                <ul>
+                                    <li><a href="">Good Hygiene</a></li>
+                                    <li><a href="">Tasty food</a></li>
+                                    <li><a href="">Good packaging</a></li>
+                                    <li><a href="">Punctual service</a></li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-b -->
+                        </div>
+                        <!--end footer c-->
+                        </div>
+                        <!-- end col -->
+                      
                         <!-- end col -->
                         <!-- <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="footer-box-d">
@@ -302,7 +331,54 @@
         </div>
     </section> -->
 
-   
+    <script>
+        const url = 'http://192.168.0.21:3000/';
+        jQuery(document).ready(function(){
+            // for signup
+            $('#register_submit').click(function(){
+                event.preventDefault();
+                let data={
+                    email: $('#create_email').val(),
+                    password: $('#create_password').val(),
+                    confirm_password: $('#confirm_password').val(),
+			    }
+                console.log(data);
+            })
+            // for login
+            $('#login_submit').click(function(){
+                event.preventDefault();
+                let data={
+                    email: $('#email').val(),
+                    password: $('#password').val(),
+			    }
+
+                // $.ajax({
+                //     url:`${url}user_login`,
+                //     method:'POST',
+                //     contentType: "application/json",
+                //     data:JSON.stringify(data),
+                //     success:function(data){
+                //         if (data.success===true) {
+                //             localStorage.setItem("_user",JSON.stringify(data.data))
+                //         }else if(data.success===false){
+                //             alert(data.msg)
+                //         }
+                //     },
+                //     // error: function (xhr, exception, thrownError) {
+                //     //     console.log(xhr)
+                //     //     console.log(exception);
+                //     //     console.log(thrownError);
+                //     // }
+                // })
+
+                if(data){
+                    // localStorage.setItem('_user',JSON.stringify(data))
+                    // window.location.href=window.location.origin+"/dashboard.html";
+                    // console.log(window.location.origin);
+                }
+        })
+        })
+    </script>
 
     <!-- ALL JS FILES -->
     <script src="js/all.js"></script>
@@ -312,12 +388,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script
 <script src="login.js"></script>
-
-   
-
 </body>
 
 </html>

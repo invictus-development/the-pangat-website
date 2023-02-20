@@ -1984,3 +1984,12 @@ textarea:focus, input:focus, select:focus, .bootstrap-select .dropdown-toggle:fo
 /* .half-month::before{
     margin-top: auto;
 } */
+/* @media only screen and (min-width:1120px) and (max-width:1200px) {
+    
+
+.ul.nav-navbar.navbar-right{
+    margin-bottom: 100px;
+
+}
+
+} */
