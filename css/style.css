@@ -698,7 +698,7 @@ html, body{ height: 100%; }
 }
 
 .item-type-zoom{
-	border:4px solid #fff;
+
 }
 .item-type-zoom .item-hover {
     z-index: 5;
@@ -1992,4 +1992,37 @@ textarea:focus, input:focus, select:focus, .bootstrap-select .dropdown-toggle:fo
 
 }
 
-} */
+} */.card-text1 {
+    color:white; padding-left: 5px;padding-right: 5px; font-size: medium; text-align: justify;
+}
+.pangat{
+    background: -webkit-linear-gradient( rgb(212, 87, 4),rgb(241, 12, 12));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* foodlist */
+.foodlist{
+    border-width: medium !important;
+     border-color: #e75b1e !important;
+      color:aliceblue;
+       font-size:medium
+       
+       
+}
+.days{
+
+    border-width: medium !important;
+     border-color: #e75b1e !important;
+     color:aliceblue !important;
+     height:120px !important;
+     padding-top: 50px !important;
+     font-size: medium !important;
+}
+.tableheading{
+    text-align: center !important;
+     border-width: medium !important; 
+     border-color: #e75b1e !important; 
+      width:30%;color:aliceblue !important;
+      font-size: medium !important;
+    
+}

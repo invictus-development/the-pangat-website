@@ -88,7 +88,7 @@
 }
 @media (max-width: 992px) {
 	.banner-text h1{
-		font-size: 50px;
+		font-size: 50px !important;
 	}
 	.banner-cell .mouse{
 		display:none;
@@ -189,7 +189,7 @@
 	}
 	.banner {
 		min-height: 800px !important;
-		background-size: inherit;
+		background-size: cover;
 	}
 	.team-main{
 		background-size: inherit;
@@ -198,14 +198,14 @@
 		background-size: inherit;
 	}
 	.special-menu{
-		background-size: inherit;
+		background-size: cover;
 	}
 	.banner-text h1 {
-		font-size: 50px;
+		font-size: 36px !important;
 		line-height: 62px;
 	}
 	.banner-text h2{
-		font-size: 24px;
+		font-size: 24px !important ;
 	}
 	.block-title{
 		font-size: 34px;
@@ -331,3 +331,45 @@
 		font-size: 16px;
 	}
 }
+@media (max-width: 438px){
+	.pangat{
+		font-size: 47px !important;
+	}
+	.banner-text h1 {
+		font-size: 30px !important;
+		
+	}
+}
+@media (max-width: 320px){
+	.pangat{
+		font-size: 37px !important;
+	}
+	.banner-text h1 {
+		font-size: 23px !important;
+		
+	}
+	.banner-text h2{
+		font-size: 17px !important;
+	}
+
+	
+}
+@media (max-width: 376px){
+
+.foodlist{
+	font-size: small !important;
+}
+.days{
+	font-size: small !important;
+}
+.tableheading{
+	font-size: small !important;
+}
+.bonus{
+
+	line-height: 2.75rem !important;
+}
+	
+}
+
+
