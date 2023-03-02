@@ -62,9 +62,9 @@
 		margin: 0 7px;
 	}
 }
-@media (max-width: 1158px) {
+@media (min-width: 1122px) and (max-width: 1201px) {
 	.main-menu nav li a{
-		margin: 0 7px;
+		margin: 0 6px !important;
 	}
 }
 @media (max-width: 1120px) {

@@ -2026,3 +2026,19 @@ textarea:focus, input:focus, select:focus, .bootstrap-select .dropdown-toggle:fo
       font-size: medium !important;
     
 }
+
+
+.featuresbox{
+    border-radius:20px;
+     border-style:solid ;
+     border-width:medium;
+     border-color: #e75b1e;
+     line-height: 5rem;
+     margin-top: 20px;
+     box-shadow: 10px 10px 5px  #e75b1e;
+
+}
+.textfb{
+    font-size: large !important;
+    
+}
